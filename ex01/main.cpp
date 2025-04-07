@@ -6,7 +6,7 @@
 /*   By: sanhwang <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/31 20:26:19 by sanhwang          #+#    #+#             */
-/*   Updated: 2025/04/03 23:50:42 by sanhwang         ###   ########.fr       */
+/*   Updated: 2025/04/07 02:01:47 by sanhwang         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,9 @@
 
 int main() {
     std::cout << "Creating Animals...\n";
+
+ /*    Animal test;
+    std::cout <<"Animal test" << std::endl; */
 
     const Animal* dog = new Dog();
     const Animal* cat = new Cat();
@@ -61,6 +64,6 @@ int main() {
         delete animals[i]; // Should call proper destructors
     }
 
-    std::cout << "End of program.\n";
+    std::cout << "End of program.\n\n\n";
     return 0;
 }

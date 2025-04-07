@@ -6,7 +6,7 @@
 /*   By: sanhwang <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/27 15:12:20 by sanhwang          #+#    #+#             */
-/*   Updated: 2025/04/03 23:51:25 by sanhwang         ###   ########.fr       */
+/*   Updated: 2025/04/07 01:57:50 by sanhwang         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,8 @@ class Cat : public AAnimal {
         ~Cat();
 
         void    makeSound() const; //no override with C++98.
-        Brain   *getBrain() const;
+        void    setIdea(const std::string &idea);
+        void    printIdeas() const;
 };
 
 #endif

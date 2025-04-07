@@ -6,7 +6,7 @@
 /*   By: sanhwang <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/31 17:15:08 by sanhwang          #+#    #+#             */
-/*   Updated: 2025/03/31 17:22:22 by sanhwang         ###   ########.fr       */
+/*   Updated: 2025/04/07 01:38:56 by sanhwang         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,5 +33,5 @@ WrongCat::~WrongCat(){
 }
 
 void    WrongCat::makeSound() const{
-    std::cout << "\"giving you deadly stares\"";
+    std::cout << "\"giving you deadly stares\"" << std::endl;
 }

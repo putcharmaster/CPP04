@@ -6,7 +6,7 @@
 /*   By: sanhwang <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/31 20:26:19 by sanhwang          #+#    #+#             */
-/*   Updated: 2025/04/05 18:37:20 by sanhwang         ###   ########.fr       */
+/*   Updated: 2025/04/07 02:00:01 by sanhwang         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,18 +17,10 @@
 
 int main() {
 
-        std::cout << "AAnimals" << std::endl;
-        const AAnimal *dog = new Dog();
-        const AAnimal *cat = new Cat();
-
-        dog->makeSound();
-        cat->makeSound();
-
-        delete dog;
-        delete cat;
-        std::cout << "End of program\n";
-/*     try {
         std::cout << "Creating Animals...\n";
+
+
+        // AAnimal test;
 
         const AAnimal* dog = new Dog();
         const AAnimal* cat = new Cat();
@@ -76,9 +68,6 @@ int main() {
         }
 
         std::cout << "End of program.\n";  // This should print if everything goes fine
-    } catch (const std::exception& e) {
-        std::cout << "Exception caught: " << e.what() << std::endl;
-    }
- */
+ 
     return 0;
 }

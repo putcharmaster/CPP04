@@ -6,7 +6,7 @@
 /*   By: sanhwang <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/28 22:52:07 by sanhwang          #+#    #+#             */
-/*   Updated: 2025/04/03 23:51:36 by sanhwang         ###   ########.fr       */
+/*   Updated: 2025/04/07 01:58:07 by sanhwang         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,6 +43,10 @@ void    Cat::makeSound() const {
     std::cout << "miaoo!!  miaooo" << std::endl;
 }
 
-Brain   *Cat::getBrain() const {
-    return brain;
+void    Cat::setIdea(const std::string &idea) {
+    brain->setIdea(idea);
+}
+
+void    Cat::printIdeas() const {
+    brain->printIdea();
 }

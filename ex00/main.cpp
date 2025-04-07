@@ -6,7 +6,7 @@
 /*   By: sanhwang <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/31 17:22:32 by sanhwang          #+#    #+#             */
-/*   Updated: 2025/03/31 17:24:22 by sanhwang         ###   ########.fr       */
+/*   Updated: 2025/04/07 01:32:05 by sanhwang         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,14 +31,17 @@ int main() {
     delete j;
     delete i;
 
-    std::cout << "\nTesting WrongAnimal polymorphism:\n";
+    std::cout << "\n\n\nTesting WrongAnimal polymorphism:\n";
     const WrongAnimal* wrongMeta = new WrongAnimal();
-    const WrongAnimal* wrongI = new WrongCat();
+    const WrongAnimal* wrongCat = new WrongCat();
 
-    wrongI->makeSound();
+    std::cout << std::endl;
+
+    wrongCat->makeSound();
     wrongMeta->makeSound();
+    std::cout << std::endl;
 
     delete wrongMeta;
-    delete wrongI;
+    delete wrongCat;
     return 0;
 }
